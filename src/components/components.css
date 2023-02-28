@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-size: 1.1rem;
+  font-family: "karla", sans-serif;
+}
+
+
+/* -----------------
+   -- Header Part --
+   -----------------
+*/
+.header {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  padding: 1.25rem;
+  color: white;
+  border: 1px solid #000000;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+}
+
+.header--image {
+  margin-left: 40px;
+  height: 120%;
+  margin-right: 17px;
+}
+
+.header--title {
+  font-size: 1.95rem;
+  margin-right: auto;
+}
+.header--project {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+@media (max-width: 40em) {
+  .header--image {
+    margin-left: 10px;
+    margin-right: 27px;
+  }
+
+  .header--title {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* -----------------
+   -- Main Content --
+   -----------------
+*/
+
+main {
+  padding: 70px 190px;
+}
+
+
+/* -----------------
+   -- Forms --
+   All the Inputs and buttons.
+   -----------------
+*/
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 35px;
+}
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 10px;
+  border: 1px solid #d5d4d8;
+  text-indent: 15px;
+}
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  cursor: pointer;
+}
+@media (max-width: 40em) {
+  main {
+    padding: 70px 10px;
+  }
+}
+
+
+/* -----------------
+   -- Meme Image --
+   -----------------
+*/
+
+.meme {
+  position: relative;
+  top: 1em;
+}
+
+.meme--image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+  max-width: -webkit-fill-available;
+  width: auto;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+@media (max-width: 40em) {
+    .meme--text{
+        font-size: 1.5em;
+    }
+}
